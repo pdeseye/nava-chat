@@ -1,10 +1,18 @@
 import React from "react";
+import ChatList from "./ChatList";
 
-const ChatWindow = () => {
+const ChatWindow = (props) => {
   return (
     <>
-    Chat Window
+    <div> To: {props.contact.name}</div>
+    <ChatList chats={props.contact.conversation}/>
+    <form>
+      <input type="text" />
+      <button type="submit">Send</button>
+    </form>
+    
     </>
+
   )
 }
 

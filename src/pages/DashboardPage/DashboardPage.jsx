@@ -36,22 +36,22 @@ const DashboardPage = () => {
     }
   ]
 },
-// {
-//   name: "Georgia Miller",
-//   telephoneNumber: 6100237465,
-//   active: false,
-//   conversation: [
-//     {sender: "user",
-//     text: "heyyy",
-//     time: "12:00",
-//   },
-//   {
-//     sender:"Georgia",
-//     text: "hello",
-//     time: "12:05"
-//   }
-// ]
-// },
+{
+  name: "Georgia Miller",
+  telephoneNumber: 6100237465,
+  active: false,
+  conversation: [
+    {sender: "user",
+    text: "heyyy",
+    time: "12:00",
+  },
+  {
+    sender:"Georgia",
+    text: "hello",
+    time: "12:05"
+  }
+]
+},
 // {
 //   name: "Michael Jackson",
 //   telephoneNumber: 6102513497,

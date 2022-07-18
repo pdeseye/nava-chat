@@ -28,7 +28,7 @@ const ContactList = (props) => {
           return 1
         }
       }).map((contact, idx) => 
-        <Contact contact={contact} key={idx}/>
+        <Contact contact={contact} key={idx} className={contact.active ? "active" : "inactive"}/>
       )}
     </>
   )

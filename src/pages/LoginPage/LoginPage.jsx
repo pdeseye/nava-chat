@@ -3,6 +3,8 @@ import React from 'react'
 import Button from 'react-bootstrap/Button'
 // import adminService from '../../services/adminService'
 import "bootstrap/dist/css/bootstrap.min.css"
+import "./LoginPage.css"
+import Logo from "../../assets/logo/logo.png"
 
 const LoginPage = () => {
   const [formData, setFormData] = useState({
@@ -27,6 +29,8 @@ const LoginPage = () => {
   // }
 
   return (
+    <div className='logodiv'>
+      <img className="logo" src={Logo} alt="logo"></img>
     <div className="login-page">
         <div className='form-container'>
           <div className="col-md-12">
@@ -45,6 +49,7 @@ const LoginPage = () => {
               </div>
             {/* </form> */}
           </div>
+        </div>
         </div>
     </div>
   )

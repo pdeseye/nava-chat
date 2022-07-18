@@ -3,7 +3,6 @@
   flex-direction:row;
   width: 100vw;
   height: 100vh;
-  background-color: green;
 }
 
 .contact-list{
@@ -12,14 +11,15 @@
   width: 30%;
   height: 100%;
   align-items: center;
-  background-color: blue;
+  background-color: rgb(78, 77, 77);
 }
 
 .contacts{
   width: 90%;
   border-radius: 5px;
-  background-color: pink;
-  border-bottom: 2px solid black;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.609);
+  background-color: rgb(95, 94, 94);
+  margin-bottom: 1px;
 }
 
 .contact-info{
@@ -29,5 +29,52 @@
 .search{
   margin-top: 10px;
   margin-bottom: 20px;
+}
 
+.chatwindow{
+  display: flex;
+  flex-direction: column;
+  width: 70%;
+  align-items: center;
+  background-color: yellow;
+}
+
+.chatform{
+  bottom: 0;
+  position: fixed;
+  width:70%;
+  background-color: aquamarine;
+}
+
+.chatform > button{
+  right: 0;
+  position: fixed;
+}
+
+.chatform > input{
+  width: 100%;
+}
+
+.chatlist{
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  width: 100%;
+  background-color: red;
+}
+
+.userchat{
+  align-self: flex-end;
+  background-color: purple;
+  padding: 10px;
+  margin: 5px;
+  border-radius: 20%;
+}
+
+.otherchat{
+  align-self: flex-start;
+  background-color: pink;
+  padding: 10px;
+  margin: 5px;
+  border-radius:20%;
 }

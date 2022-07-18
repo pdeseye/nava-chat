@@ -3,15 +3,14 @@ import ChatList from "./ChatList";
 
 const ChatWindow = (props) => {
   return (
-    <>
-    <div> To: {props.contact.name}</div>
-    <ChatList chats={props.contact.conversation}/>
-    <form>
-      <input type="text" />
-      <button type="submit">Send</button>
-    </form>
-    
-    </>
+    <div className="chatwindow">
+      <div> To: {props.contact.name}</div>
+      <ChatList chats={props.contact.conversation}/>
+      <form className="chatform">
+        <input type="text" />
+        <button type="submit">Send</button>
+      </form>
+    </div>
 
   )
 }

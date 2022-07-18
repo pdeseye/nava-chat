@@ -18,8 +18,8 @@ const ContactList = (props) => {
 })
 
   return (
-    <>
-      <input onChange={inputHandler}/>
+    <div className="contact-list">
+      <input className="search" onChange={inputHandler}/>
 
       {filteredContacts.sort(function(a){
         if(a.active){
@@ -30,7 +30,7 @@ const ContactList = (props) => {
       }).map((contact, idx) => 
         <Contact contact={contact} key={idx} className={contact.active ? "active" : "inactive"}/>
       )}
-    </>
+    </div>
   )
 }
 

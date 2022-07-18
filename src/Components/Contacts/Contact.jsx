@@ -2,12 +2,12 @@ import React from "react";
 
 const Contact = (props) => {
   return (
-    <>
-     <h6> 
+    <div className="contacts">
+     <h6 className="contact-info"> 
       {props.contact.name}  <br/>
       {props.contact.active ? "Active" : "Not Active"}
     </h6>
-    </>
+    </div>
   )
 }
 

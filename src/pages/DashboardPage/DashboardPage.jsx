@@ -1,6 +1,7 @@
 import React, { useState } from "react"
 import ChatWindow from "../../Components/ChatWindow/ChatWindow"
 import ContactList from "../../Components/Contacts/ContactList"
+import "./DashboardPage.css"
 
 const DashboardPage = () => {
   const contacts = [
@@ -91,10 +92,10 @@ const [contact, setContact] = useState(hasConversation ? hasConversation : null 
 
 
 return(
-  <>
+  <div className="dashboard-page">
       <ContactList contacts={contacts} setContact={setContact}/>
       <ChatWindow contact={contact}/>
-    </>
+    </div>
   )
 }
 

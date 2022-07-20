@@ -16,6 +16,9 @@ const ContactList = (props) => {
         return contact.name.includes(inputText)
     }
 })
+const handleClick = (contact) => {
+  props.setContact(contact)
+}
 
   return (
     <div className="contact-list">
@@ -28,7 +31,7 @@ const ContactList = (props) => {
           return 1
         }
       }).map((contact, idx) => 
-        <Contact contact={contact} key={idx} className={contact.active ? "active" : "inactive"}/>
+        <Contact contact={contact} handleClick={handleClick} key={idx} className={contact.active ? "active" : "inactive"}/>
       )}
     </div>
   )

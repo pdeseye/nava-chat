@@ -21,10 +21,9 @@ const ChatWindow = (props) => {
 
   const handleSubmit = event => {
     event.preventDefault()
-    console.log( formData)
     const tempconvo = [...convo, formData]
     setConvo(tempconvo)
-    console.log(typeof tempconvo)
+    event.target.reset();
   }
 
   return (
